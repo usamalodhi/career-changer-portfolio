@@ -8,7 +8,7 @@ import { VARIANTS } from '../src/constants/constants';
 const Projects: NextPage = () => {
   return (
     <Box as={motion.div} variants={VARIANTS} initial='hidden' animate='enter' exit='exit'>
-      <HeadComponent contentTitle='Usama Lodhi | Front End Web Developer' contentDescription='Portfolio Projects' />
+      <HeadComponent contentTitle='NAME | Front End Web Developer' contentDescription='Portfolio Projects' />
       <Box px='24px'>
         <Text as='h1'>View Projects</Text>
       </Box>

@@ -5,10 +5,7 @@ import { Hero } from '../src/components/Hero/Hero';
 const Home: NextPage = () => {
   return (
     <>
-      <HeadComponent
-        contentTitle='Usama Lodhi | Front End Web Developer'
-        contentDescription='React wizard, CSS Mysfit'
-      />
+      <HeadComponent contentTitle='NAME | Front End Web Developer' contentDescription='React wizard, CSS Mysfit' />
       <Hero />
     </>
   );

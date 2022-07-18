@@ -8,7 +8,7 @@ import { Box } from '@chakra-ui/react';
 const About: NextPage = () => {
   return (
     <Box as={motion.div} variants={VARIANTS} initial='hidden' animate='enter' exit='exit'>
-      <HeadComponent contentTitle='Usama Lodhi | Front End Web Developer' contentDescription='About Me' />
+      <HeadComponent contentTitle='NAME | Front End Web Developer' contentDescription='About Me' />
       <AboutMe />
     </Box>
   );
