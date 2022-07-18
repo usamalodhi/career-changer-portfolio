@@ -33,10 +33,10 @@ const SocialLinks = ({ name, linkTo, image }: SocialProps) => {
 export function Footer() {
   return (
     <Flex as='footer' layerStyle='header_footer' direction={{ base: 'column', lg: 'row' }}>
-      <FooterText copyright='© 2022 Usama Lodhi' email='Email: lodhius@gmail.com' tel='Tel: 07455964444' />
+      <FooterText copyright='© 2022 NAME' email='Email: NAME@gmail.com' tel='Tel: 0XXXXXXXXXX' />
       <List display='flex' listStyleType='none' paddingRight={{ base: '0px', lg: '24px' }}>
-        <SocialLinks image={Github} name='Github' linkTo='https://github.com/usamalodhi/' />
-        <SocialLinks image={LinkedIn} name='LinkedIn' linkTo='https://www.linkedin.com/in/usama-lodhi//' />
+        <SocialLinks image={Github} name='Github' linkTo='https://github.com/' />
+        <SocialLinks image={LinkedIn} name='LinkedIn' linkTo='https://www.linkedin.com/' />
       </List>
     </Flex>
   );

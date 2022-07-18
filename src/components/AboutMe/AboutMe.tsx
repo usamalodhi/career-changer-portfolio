@@ -13,7 +13,7 @@ interface HighlighterProps {
   children: string;
 }
 
-const HIGHLIGHT = ['#A7F3D0', '#BAE6FD', '#C7D2FE', '#FDE68A'];
+const HIGHLIGHT = ['#FFA500'];
 
 const Highlighter = ({ backgroundColor, children }: HighlighterProps) => {
   return (
@@ -27,7 +27,7 @@ const Feature = ({ service, text }: FeatureProps) => {
   return (
     <Flex direction='column'>
       <Text as='h3'>{service}</Text>
-      <Divider borderColor='black' />
+      <Divider borderColor='white' />
       <Text as='p'>{text}</Text>
     </Flex>
   );
@@ -78,51 +78,23 @@ export function AboutMe() {
             </Link>
           </Flex>
         </Flex>
-        <Text as='p'>
-          I'm a graduate of the{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[0]} children='Boolean Software Developer Academy ' />
-          learning the fundamentals of frontend and backend web development. A strong emphasis was placed on programming
-          in <Highlighter backgroundColor={HIGHLIGHT[1]} children='Javascript/Typescript' /> to build full stack
-          applications using <Highlighter backgroundColor={HIGHLIGHT[2]} children='React,' />{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[3]} children='Node/Express,' />{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[0]} children='PostgresSQL' /> and{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[2]} children='Prisma ORM.' />
-        </Text>
-        <Text as='p'>
-          Outside of the academy I've been bolstering my skills in the latest frontend technologies utilising frameworks
-          including <Highlighter backgroundColor={HIGHLIGHT[3]} children='Gatsby' /> and{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[2]} children='Next JS,' /> CSS Libraries including{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[1]} children='Chakra UI,' />{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[3]} children='Material UI' /> and{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[0]} children='Framer Motion.' /> I would love to work with you in an
-          exciting Frontend role.
-        </Text>
-        <Text as='p'>
-          Prior to web development, I've worked as an analyst in financial services; most notably in the{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[3]} children='programming of credit strategies' /> in the specialist
-          lending market and as a PhD researcher. I've had the opportunity to work with both small and large,
-          specialised and cross-functional teams and developed a working style that is suited for a{' '}
-          <Highlighter backgroundColor={HIGHLIGHT[0]} children='fast-paced, self-directed environment' />
-        </Text>
+        <Text as='p'>Text For Paragraph One</Text>
+        <Text as='p'>Text For Paragraph Two</Text>
+        <Text as='p'>Text For Paragraph Three</Text>
+
         <Text as='h2'>Services</Text>
         <Stack>
           <Feature
-            service={<Highlighter backgroundColor={HIGHLIGHT[2]} children='Frontend Development' />}
-            text={
-              'Design, Build and Deployment of responsive web applications made within the React eco-system of frontend frameworks (React, Gatsby, Next JS) and production ready CSS libraries with Chakra UI, Material UI, Styled Components and Framer Motion amongst my favorite tools.'
-            }
+            service={<Highlighter backgroundColor={HIGHLIGHT[0]} children='Service 1' />}
+            text={'Write Decription for Service 1 you provide'}
           />
           <Feature
-            service={<Highlighter backgroundColor={HIGHLIGHT[3]} children='Backend Development' />}
-            text={
-              'Create RESTful server-side applications to handle HTTP requests using Node/Express with connections to relational data stores such as PostgresSQL.'
-            }
+            service={<Highlighter backgroundColor={HIGHLIGHT[0]} children='Service 2' />}
+            text={'Write Decription for Service 2 you provide'}
           />
           <Feature
-            service={<Highlighter backgroundColor={HIGHLIGHT[1]} children='UI & UX Design' />}
-            text={
-              'A keen eye for the latest trends in web development design to create engaging and user-friendly interfaces with prototyping in design tools including Figma.'
-            }
+            service={<Highlighter backgroundColor={HIGHLIGHT[0]} children='Service 3' />}
+            text={'Write Decription for Service 3 you provide'}
           />
         </Stack>
 

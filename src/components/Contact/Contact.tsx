@@ -14,7 +14,7 @@ const Mailto = ({ email, subject = '', body = '', children }: MailtoProps) => {
 const ContactInfo = ({ heading, email, subject, body, children, message, tel }: ContactProps) => {
   return (
     <Flex pt='1em' direction='row' alignItems='center' justifyContent='flex-start'>
-      <Box borderTop='0.25em solid black'>
+      <Box borderTop='0.25em solid white'>
         <Box pb='8px'>
           <Text as='h2'>{heading}</Text>
           <Text fontWeight='bold' as='p'>
@@ -23,7 +23,7 @@ const ContactInfo = ({ heading, email, subject, body, children, message, tel }: 
         </Box>
         <Box
           as={motion.div}
-          whileHover={{ color: '#FFFAFA', backgroundColor: '#000000' }}
+          whileHover={{ color: '#000000', backgroundColor: '#FFFAFA' }}
           transition='0.05s linear'
           layerStyle='ButtonContactStyle'
           fontWeight='bold'
@@ -34,7 +34,7 @@ const ContactInfo = ({ heading, email, subject, body, children, message, tel }: 
         </Box>
         <Box
           as={motion.div}
-          whileHover={{ color: '#FFFAFA', backgroundColor: '#000000' }}
+          whileHover={{ color: '#000000', backgroundColor: '#FFFAFA' }}
           transition='0.05s linear'
           layerStyle='ButtonContactStyle'
           fontWeight='bold'
@@ -52,11 +52,11 @@ const Contact = () => {
     <ContactInfo
       heading='Contact Info'
       message={`Let's build something today!`}
-      email='lodhius@gmail.com'
+      email='NAME@gmail.com'
       subject='Hello'
       body='write email here'
-      children='lodhius@gmail.com'
-      tel='07455964444'
+      children='NAME@gmail.com'
+      tel='0XXXXXXXXXX'
     />
   );
 };

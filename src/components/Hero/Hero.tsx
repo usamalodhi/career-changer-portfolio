@@ -20,17 +20,9 @@ const HeroText = ({ heading, headingSpan, subHeading }: HeroProps) => {
 
 export function Hero() {
   return (
-    <Flex
-      as={motion.div}
-      variants={VARIANTS}
-      initial='hidden'
-      animate='enter'
-      exit='exit'
-      layerStyle='Hero'
-      background='linear-gradient(to right, #FFFFFF, #FFEFBA)'
-    >
+    <Flex as={motion.div} variants={VARIANTS} initial='hidden' animate='enter' exit='exit' layerStyle='Hero'>
       <HeroText
-        heading={`Hi there, I'm Usama`}
+        heading={`Hi there, I'm NAME`}
         headingSpan={`I'm a Frontend Developer`}
         subHeading='I love building responsive web applications that are user-friendly, simple and delightful'
       />

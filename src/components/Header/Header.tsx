@@ -22,7 +22,7 @@ const Logo = ({ logo }: HeaderLogoProps) => {
 export function Header() {
   return (
     <Flex as='header' layerStyle='header_footer' direction={{ base: 'column', lg: 'row' }}>
-      <Logo logo='Usama Lodhi' />
+      <Logo logo='NAME' />
       <NavBar />
     </Flex>
   );

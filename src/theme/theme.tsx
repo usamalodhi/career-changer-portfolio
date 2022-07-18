@@ -6,9 +6,9 @@ const theme = extendTheme({
     global: {
       body: {
         fontFamily: 'poppins, sans-serif',
-        color: '#000000',
-        backgroundColor: '#FFFAFA',
-        background: 'linear-gradient(to right, #FFFFFF, #FFEFBA)',
+        color: '#FFFAFA',
+        backgroundColor: '#000000',
+        background: 'linear-gradient(to right, #03001E, #7303C0, #EC38BC, #FDEFF9)',
       },
 
       h1: { fontSize: '3rem', fontWeight: '900', maxWidth: '70ch', lineHeight: '1.6' },
@@ -67,7 +67,7 @@ const theme = extendTheme({
       border: '0.2em solid black',
       gap: '1em',
       padding: '10px 16px 9px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: '#000000',
     },
     ProjectImage: {
       fit: 'cover',
@@ -94,9 +94,3 @@ const theme = extendTheme({
 });
 
 export default theme;
-
-// Extra small devices (<768px): width: auto (or no width)
-// Small Devices (≥576px): width: 540px
-// Medium Devices (≥768px): width: 720px
-// Larger Devices (≥992px): width: 960px
-// XLarge Devices (≥1200px): width: 1140px
